@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bedrock Q&A App</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="Enter your question..." size="50" required>
+        <input type="submit" value="Ask">
+    </form>
+    {% if answer %}
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
